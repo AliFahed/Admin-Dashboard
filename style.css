@@ -13,6 +13,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  /* grid-template-rows: auto 1fr; */
 }
 
 .header {
@@ -29,4 +30,64 @@ body {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   background: #f1f1f1;
+}
+
+/* sidebar section */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  padding: 15px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.home-section img,
+.settings-section img {
+  cursor: pointer;
+  margin-left: 13px;
+}
+
+.home-section li,
+.settings-section li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-section ul,
+.settings-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-section a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-section a:hover {
+  font-weight: normal;
+}
+
+.settings-section a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.settings-section a:hover {
+  font-weight: normal;
 }
